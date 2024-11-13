@@ -1,6 +1,6 @@
 <model>
     <mount>//OPNsense/clamav/url</mount>
-    <description>ClamAV List configuration</description>
+    <description>Antivirus List configuration</description>
     <version>0.0.1</version>
     <items>
         <lists>

@@ -1,9 +1,9 @@
 <form>
     <field>
         <id>general.enabled</id>
-        <label>Enable clamd service</label>
+        <label>Enable Antivirus service</label>
         <type>checkbox</type>
-        <help>This will activate the clamd service.</help>
+        <help>This will activate the Antivirus service.</help>
     </field>
     <field>
         <id>general.fc_enabled</id>
@@ -73,7 +73,7 @@
         <id>general.detectbroken</id>
         <label>Detect broken executables</label>
         <type>checkbox</type>
-        <help>With this option clamav will try to detect broken executables (both PE and ELF) and mark them as Broken.</help>
+        <help>With this option Antivirus will try to detect broken executables (both PE and ELF) and mark them as Broken.</help>
     </field>
     <field>
         <id>general.scanole2</id>
@@ -127,7 +127,7 @@
         <id>general.scanarchive</id>
         <label>Scan archives</label>
         <type>checkbox</type>
-        <help>ClamAV will scan within archives and compressed files.</help>
+        <help>Antivirus will scan within archives and compressed files.</help>
     </field>
     <field>
         <id>general.arcblockenc</id>
@@ -161,9 +161,9 @@
     </field>
     <field>
         <id>general.logverbose</id>
-        <label>ClamAV log verbose</label>
+        <label>Antivirus log verbose</label>
         <type>checkbox</type>
-        <help>Enable ClamAV verbose logging.</help>
+        <help>Enable Antivirus verbose logging.</help>
     </field>
     <field>
         <id>general.fc_logverbose</id>

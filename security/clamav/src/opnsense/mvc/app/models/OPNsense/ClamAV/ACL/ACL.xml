@@ -1,6 +1,6 @@
 <acl>
    <page-services-clamav>
-      <name>Services: ClamAV</name>
+      <name>Services: Antivirus</name>
       <patterns>
          <pattern>ui/clamav/*</pattern>
          <pattern>api/clamav/*</pattern>

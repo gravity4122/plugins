@@ -37,13 +37,13 @@ function clamav_services()
         $config['OPNsense']['clamav']['general']['enabled'] == 1
     ) {
         $services[] = array(
-            'description' => gettext('ClamAV Daemon'),
+            'description' => gettext('Antivirus Daemon'),
             'configd' => array(
                 'restart' => array('clamav restart'),
                 'start' => array('clamav start'),
                 'stop' => array('clamav stop'),
             ),
-            'name' => 'clamd',
+            'name' => 'Antivirus',
             'pidfile' => '/var/run/clamav/clamd.pid'
         );
     }
