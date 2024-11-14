@@ -12,8 +12,8 @@
                 <label>User error pages</label>
                 <type>dropdown</type>
                 <help>
-                  The proxy error pages can be altered, default layout uses OPNsense content, when Squid is selected
-                  the content for the selected language will be used (standard squid layout), Custom offers the possibility
+                  The proxy error pages can be altered, default layout uses DevGate content, when Proxy is selected
+                  the content for the selected language will be used (standard Proxy layout), Custom offers the possibility
                   to upload your own theme content.
                 </help>
             </field>
@@ -21,7 +21,7 @@
                 <id>proxy.general.icpPort</id>
                 <label>ICP port</label>
                 <type>text</type>
-                <help>The port number where Squid sends and receives ICP queries to and from neighbor caches. Leave blank to disable (default). The standard UDP port for ICP is 3130.</help>
+                <help>The port number where Proxy sends and receives ICP queries to and from neighbor caches. Leave blank to disable (default). The standard UDP port for ICP is 3130.</help>
                 <advanced>true</advanced>
             </field>
             <field>
@@ -67,14 +67,14 @@
                 <id>proxy.general.useViaHeader</id>
                 <label>Use Via header</label>
                 <type>checkbox</type>
-                <help>If set (default), Squid will include a Via header in requests and replies as required by RFC2616.</help>
+                <help>If set (default), Proxy will include a Via header in requests and replies as required by RFC2616.</help>
                 <advanced>true</advanced>
             </field>
             <field>
                 <id>proxy.general.forwardedForHandling</id>
                 <label>X-Forwarded-For header handling</label>
                 <type>dropdown</type>
-                <help>Select what to do with X-Forwarded-For header. If set to: "on", Squid will append your client's IP address in the HTTP requests it forwards. By default it looks like X-Forwarded-For: 192.1.2.3; If set to: "off", it will appear as X-Forwarded-For: unknown; "transparent", Squid will not alter the X-Forwarded-For header in any way; If set to: "delete", Squid will delete the entire X-Forwarded-For header; If set to: "truncate", Squid will remove all existing X-Forwarded-For entries, and place the client IP as the sole entry.</help>
+                <help>Select what to do with X-Forwarded-For header. If set to: "on", Proxy will append your client's IP address in the HTTP requests it forwards. By default it looks like X-Forwarded-For: 192.1.2.3; If set to: "off", it will appear as X-Forwarded-For: unknown; "transparent", Proxy will not alter the X-Forwarded-For header in any way; If set to: "delete", Proxy will delete the entire X-Forwarded-For header; If set to: "truncate", Proxy will remove all existing X-Forwarded-For entries, and place the client IP as the sole entry.</help>
                 <advanced>true</advanced>
             </field>
             <field>
@@ -95,7 +95,7 @@
                 <id>proxy.general.suppressVersion</id>
                 <label>Suppress version string</label>
                 <type>checkbox</type>
-                <help>Suppress Squid version string info in HTTP headers and HTML error pages.</help>
+                <help>Suppress Proxy version string info in HTTP headers and HTML error pages.</help>
                 <advanced>true</advanced>
             </field>
             <field>
@@ -109,14 +109,14 @@
                 <id>proxy.general.uriWhitespaceHandling</id>
                 <label>Whitespace handling of URI</label>
                 <type>dropdown</type>
-                <help>Select what to do with URI that contain whitespaces. The current Squid implementation of encode and chop violates RFC2616 by not using a 301 redirect after altering the URL.</help>
+                <help>Select what to do with URI that contain whitespaces. The current Proxy implementation of encode and chop violates RFC2616 by not using a 301 redirect after altering the URL.</help>
                 <advanced>true</advanced>
             </field>
             <field>
                 <id>proxy.general.enablePinger</id>
                 <label>Enable pinger</label>
                 <type>checkbox</type>
-                <help>Toggles the Squid pinger service. This service is used in the selection of the best parent proxy.</help>
+                <help>Toggles the Proxy pinger service. This service is used in the selection of the best parent proxy.</help>
                 <advanced>true</advanced>
             </field>
         </subtab>
@@ -613,13 +613,13 @@
                 <id>proxy.forward.snmp_enable</id>
                 <label>Enable SNMP Agent</label>
                 <type>checkbox</type>
-                <help>Enable or disable the squid SNMP Agent.</help>
+                <help>Enable or disable the Proxy SNMP Agent.</help>
             </field>
             <field>
                 <id>proxy.forward.snmp_port</id>
                 <label>SNMP port</label>
                 <type>text</type>
-                <help>The port number where Squid listens for SNMP requests. To enable SNMP support set this to a suitable port number. Port number 3401 is often used for the Squid SNMP agent.</help>
+                <help>The port number where Proxy listens for SNMP requests. To enable SNMP support set this to a suitable port number. Port number 3401 is often used for the Proxy SNMP agent.</help>
             </field>
             <field>
                 <id>proxy.forward.snmp_password</id>

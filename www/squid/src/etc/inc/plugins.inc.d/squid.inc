@@ -37,14 +37,14 @@ function squid_services()
         $config['OPNsense']['proxy']['general']['enabled'] == 1
     ) {
         $services[] = array(
-            'description' => gettext('Squid Web Proxy'),
+            'description' => gettext('Web Proxy'),
             'configd' => array(
                 'restart' => array('proxy restart'),
                 'start' => array('proxy start'),
                 'stop' => array('proxy stop'),
             ),
             'pidfile' => '/var/run/squid/squid.pid',
-            'name' => 'squid',
+            'name' => 'Proxy',
         );
     }
 
@@ -56,7 +56,7 @@ function squid_xmlrpc_sync()
     $result = array();
 
     $result[] = array(
-        'description' => gettext('Squid Web Proxy'),
+        'description' => gettext('Web Proxy'),
         'section' => 'OPNsense.proxy',
         'id' => 'squid',
         'services' => ["squid"],

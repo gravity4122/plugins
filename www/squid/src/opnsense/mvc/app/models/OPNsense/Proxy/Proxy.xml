@@ -1,7 +1,7 @@
 <model>
     <mount>//OPNsense/proxy</mount>
     <version>1.0.7</version>
-    <description>Squid web proxy settings</description>
+    <description>Web proxy settings</description>
     <items>
         <general>
             <enabled type="BooleanField">
@@ -9,9 +9,9 @@
                 <Required>Y</Required>
             </enabled>
             <error_pages type="OptionField">
-                <BlankDesc>Squid</BlankDesc>
+                <BlankDesc>Proxy</BlankDesc>
                 <OptionValues>
-                    <opnsense>OPNsense</opnsense>
+                    <opnsense>DevGate</opnsense>
                     <custom>Custom</custom>
                 </OptionValues>
             </error_pages>
